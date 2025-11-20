@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Intro from './components/Intro';
 import Profile from './components/Profile';
@@ -15,7 +15,7 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <div className="relative min-h-screen">
+      <div className="bg-black min-h-screen text-white selection:bg-primary-500/30">
         <Header />
         <main>
           <Intro />
