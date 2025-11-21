@@ -47,14 +47,7 @@ const Intro = () => {
                         transition={{ duration: 0.6 }}
                         className="space-y-4"
                     >
-                        <motion.h2
-                            className="text-lg md:text-xl text-primary-400 font-medium"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.2 }}
-                        >
-                            Network Console of
-                        </motion.h2>
+
 
                         <motion.h1
                             className="text-5xl md:text-7xl lg:text-8xl font-bold gradient-text text-glow"
