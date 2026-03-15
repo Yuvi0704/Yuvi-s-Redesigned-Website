@@ -15,7 +15,6 @@ const Skills = () => {
                 'VLAN design, trunking and inter-VLAN routing',
                 'Static routing, OSPF, ACLs, and port security',
                 'IPv4/IPv6 addressing, subnetting, and route summarization'
-            ]
             ],
         },
         {
