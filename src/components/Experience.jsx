@@ -90,13 +90,13 @@ const Experience = () => {
     const education = [
         {
             degree: 'MSc Internetworking',
-            school: 'University of Alberta',
+            school: 'University of Alberta, Canada',
             period: 'Current',
             icon: HiAcademicCap,
         },
         {
             degree: 'B.Tech Computer Science & Engineering',
-            school: 'India',
+            school: 'Karunya University, India',
             period: 'Completed',
             icon: HiAcademicCap,
         },
