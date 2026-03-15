@@ -8,7 +8,7 @@ const Experience = () => {
 
     const experiences = [
          {
-            company: 'TELUS',
+            company: 'TELUS Store - via Wish Telecom',
             role: 'Sales Specialist',
             period: 'Current',
             responsibilities: [
@@ -33,9 +33,9 @@ const Experience = () => {
             icon: HiOfficeBuilding,
         },
         {
-            company: 'TELUS',
+            company: 'TELUS - via The Acquisition Group',
             role: 'Senior Marketing Consultant',
-            period: 'Previous',
+            period: 'Previous', 
             responsibilities: [
                 'Led workshops on sales strategy, motivation and performance.',
                 'Conducted hiring interviews and helped recruit qualified reps.',
