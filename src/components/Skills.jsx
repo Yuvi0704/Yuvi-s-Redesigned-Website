@@ -11,10 +11,11 @@ const Skills = () => {
             title: 'Networking & Certifications',
             icon: HiGlobeAlt,
             skills: [
-                'CCNP ENCOR & ENSARI – ongoing (foundation from CCNA)',
-                'VLAN design, trunking, inter-VLAN routing',
-                'Static routes, OSPF basics, ACLs and port security',
-                'IPv4/IPv6 addressing, subnetting and summarisation',
+                'CCNP ENCOR completed; CCNP ENARSI in progress',
+                'VLAN design, trunking, and inter-VLAN routing',
+                'Static routing, OSPF, ACLs, and port security',
+                'IPv4/IPv6 addressing, subnetting, and route summarization'
+            ]
             ],
         },
         {
