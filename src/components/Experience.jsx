@@ -7,6 +7,19 @@ const Experience = () => {
     const isInView = useInView(ref, { once: true, margin: '-100px' });
 
     const experiences = [
+         {
+            company: 'TELUS Store - via Wish Telecom',
+            role: 'Sales Specialist',
+            period: 'Current',
+            responsibilities: [
+               'Delivered consultative sales for TELUS and Koodo mobility plans, smartphones, and accessories.',
+                'Processed activations, upgrades, SIM swaps, and number porting through telecom POS systems.',
+                  'Consistently met sales targets by identifying customer needs and recommending suitable solutions.',
+                  'Educated customers on device features, data plans, and value-added services.',
+                  'Maintained high customer satisfaction through clear communication and efficient service.'
+            ],
+            icon: HiBriefcase,
+        },
         {
             company: 'TELUS Technician – via ATS',
             role: 'Telecommunication Technician',
