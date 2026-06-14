@@ -8,21 +8,74 @@ const Experience = () => {
 
     const experiences = [
         {
+            company: 'TELUS Technician – via ATS',
+            role: 'Telecommunication Technician',
+            period: 'Current · Full-Time',
+            responsibilities: [
+                'Install and activate TELUS fibre and telecommunications services.',
+                'Configure ONTs, routers, Wi-Fi systems, and customer equipment.',
+                'Troubleshoot connectivity, network, and service-related issues.',
+                'Perform service testing and quality assurance during installations.',
+                'Document technical work and service activities accurately.',
+                'Provide customer-facing technical support and guidance.',
+            ],
+            icon: HiBriefcase,
+        },
+        {
+            company: 'University of Alberta',
+            role: 'Master of Internetworking',
+            period: '2024 - 2026 (Completed)',
+            responsibilities: [
+                'Studied routing, switching, network security, and enterprise networking.',
+                'Designed and implemented networking labs and infrastructure projects.',
+                'Gained hands-on experience with network troubleshooting and protocol analysis.',
+                'Applied networking concepts to real-world enterprise scenarios.',
+                'Completed advanced coursework in data communications and network architecture.',
+            ],
+            icon: HiAcademicCap,
+        },
+        {
+            company: 'TELUS Store – via Wish Telecom',
+            role: 'Sales Specialist',
+            period: 'Part-Time During Studies',
+            responsibilities: [
+                'Assisted customers with TELUS mobility services, devices, and account solutions.',
+                'Processed activations, upgrades, number transfers, and device setups.',
+                'Provided technical support and troubleshooting for mobile devices and services.',
+                'Recommended products and solutions based on customer needs.',
+                'Maintained high customer satisfaction through clear communication and support.',
+            ],
+            icon: HiBriefcase,
+        },
+        {
             company: 'Holiday Inn',
             role: 'Night Auditor',
-            period: 'Current',
+            period: 'Part-Time During Studies',
             responsibilities: [
-                'Manages audits, late check-ins, and escalations calmly.',
-                'Balances end-of-day reports, audits folios and closes revenue.',
-                'Keeps the property stable at night and prepares for morning teams.',
-                'Uses night shifts to study networking, labs and CCNP material.',
+                'Managed end-of-day audits, financial reconciliation, and revenue reporting.',
+                'Handled guest inquiries, late check-ins, and issue resolution in a fast-paced environment.',
+                'Maintained operational accuracy and prepared reports for hotel management.',
+                'Developed strong problem-solving, communication, and customer service skills.',
+                'Balanced work responsibilities while pursuing a Master of Internetworking degree.',
             ],
             icon: HiOfficeBuilding,
         },
         {
-            company: 'TELUS',
+            company: 'Staples Canada',
+            role: 'Tech Associate',
+            period: 'Part-Time During Studies',
+            responsibilities: [
+                'Assisted customers with computers, printers, accessories and technology products.',
+                'Provided product recommendations based on customer needs and budget.',
+                'Supported basic technology troubleshooting and customer questions.',
+                'Maintained merchandising, inventory and store presentation.',
+            ],
+            icon: HiDesktopComputer,
+        },
+        {
+            company: 'TELUS – via The Acquisition Group',
             role: 'Senior Marketing Consultant',
-            period: 'Previous',
+            period: 'Part-Time During Studies',
             responsibilities: [
                 'Led workshops on sales strategy, motivation and performance.',
                 'Conducted hiring interviews and helped recruit qualified reps.',
@@ -33,61 +86,34 @@ const Experience = () => {
             icon: HiBriefcase,
         },
         {
-            company: 'Cisco (Virtual)',
-            role: 'Networking Virtual Internship',
-            period: 'Previous',
+            company: 'Karunya University',
+            role: 'Bachelor of Computer Science and Engineering',
+            period: '2020 – 2024 (Completed)',
             responsibilities: [
-                'Topology design and connectivity in Cisco Packet Tracer.',
-                'Reinforced understanding of packet movement and behavior.',
+                'Built a strong foundation in computer networks, operating systems, programming, and cybersecurity.',
+                'Developed academic and research projects in networking, IoT, artificial intelligence, and information security.',
+                'Gained hands-on experience with network design, troubleshooting, and system administration concepts.',
+                'Published and presented technical projects focused on real-world problem solving and emerging technologies.',
+                'Collaborated with teams on software development, research, and engineering projects throughout the program.',
             ],
-            icon: HiGlobeAlt,
+            icon: HiAcademicCap,
         },
         {
-            company: 'Integra Pvt Ltd',
+            company: 'Integra Software Services',
             role: 'IT Support Intern',
-            period: 'Previous',
+            period: 'Internship',
             responsibilities: [
-                'Troubleshooting systems and network issues.',
-                'Learned structured troubleshooting workflows.',
+                'Assisted users with hardware, software, and basic network troubleshooting.',
+                'Supported system maintenance, configuration, and technical issue resolution.',
+                'Learned structured IT support and incident management workflows.',
+                'Gained exposure to Windows systems, networking fundamentals, and user support.',
+                'Collaborated with team members to diagnose and resolve technical problems.',
             ],
             icon: HiDesktopComputer,
         },
-        {
-            company: 'Legends Tech',
-            role: 'Web Developer Intern',
-            period: 'Previous',
-            responsibilities: [
-                'HTML/CSS/JavaScript/Node.js projects.',
-                'Strengthened practical problem-solving skills.',
-            ],
-            icon: HiCode,
-        },
-        {
-            company: 'Research Lab',
-            role: 'Cybersecurity Intern',
-            period: 'Previous',
-            responsibilities: [
-                'Keylogger project and security concept exploration.',
-                'Built foundations in cyber security concepts.',
-            ],
-            icon: HiShieldCheck,
-        },
     ];
 
-    const education = [
-        {
-            degree: 'MSc Internetworking',
-            school: 'University of Alberta',
-            period: 'Current',
-            icon: HiAcademicCap,
-        },
-        {
-            degree: 'B.Tech Computer Science & Engineering',
-            school: 'India',
-            period: 'Completed',
-            icon: HiAcademicCap,
-        },
-    ];
+    const education = [];
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -172,49 +198,6 @@ const Experience = () => {
                         </motion.div>
                     ))}
 
-                    {/* Education Section */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={isInView ? { opacity: 1, y: 0 } : {}}
-                        transition={{ duration: 0.6, delay: 0.3 }}
-                        className="mt-16"
-                    >
-                        <h3 className="text-2xl md:text-3xl font-semibold mb-6 md:ml-20" style={{ color: '#f5f5f7' }}>Education</h3>
-                    </motion.div>
-
-                    {education.map((edu, index) => (
-                        <motion.div
-                            key={`edu-${index}`}
-                            className="relative"
-                            variants={cardVariants}
-                        >
-                            {/* Timeline dot */}
-                            <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 border-4 border-slate-950 hidden md:block z-10"></div>
-
-                            <div className="md:ml-20">
-                                <motion.div
-                                    className="card"
-                                    whileHover={{ x: 8 }}
-                                >
-                                    <div className="flex items-start gap-4 mb-4">
-                                        <div className="text-primary-500">
-                                            {React.createElement(edu.icon, { className: 'w-10 h-10' })}
-                                        </div>
-                                        <div className="flex-1">
-                                            <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
-                                                {edu.degree}
-                                            </h3>
-                                            <p className="text-primary-400 font-semibold mb-2">{edu.school}</p>
-                                            <div className="flex items-center gap-2 text-sm text-gray-400">
-                                                <HiClock className="w-4 h-4" />
-                                                <span>{edu.period}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </div>
-                        </motion.div>
-                    ))}
                 </div>
             </motion.div>
         </section>

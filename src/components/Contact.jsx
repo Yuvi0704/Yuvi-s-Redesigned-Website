@@ -82,7 +82,7 @@ const Contact = () => {
                     >
                         <h4 className="text-xl font-bold text-white mb-4">Let's Collaborate!</h4>
                         <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto">
-                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                            I'm always open to discussing new projects and creative ideas to be part of your visions.
                             Feel free to reach out via any of the platforms above or use the live chat widget!
                         </p>
                     </motion.div>

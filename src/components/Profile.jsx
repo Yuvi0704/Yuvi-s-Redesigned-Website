@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { HiGlobeAlt, HiBeaker, HiAcademicCap, HiLightBulb, HiTrendingUp } from 'react-icons/hi';
+import { HiGlobeAlt, HiBeaker, HiAcademicCap, HiLightBulb, HiTrendingUp, HiCode } from 'react-icons/hi';
 
 const Profile = () => {
     const ref = useRef(null);
@@ -16,8 +16,8 @@ const Profile = () => {
             text: 'Lab building, packet analysis, protocol behaviour—documenting labs and configs daily.',
         },
         {
-            icon: HiAcademicCap,
-            text: 'Working on capstone project & CCNP ENCOR/ENSARI. Learning daily, always improving.',
+            icon: HiCode,
+            text: 'Completed CCNP ENCOR. Learning daily, always improving.',
         },
         {
             icon: HiLightBulb,

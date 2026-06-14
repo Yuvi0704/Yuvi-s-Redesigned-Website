@@ -55,7 +55,7 @@ const Intro = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                         >
-                            Yuvaraajan "Yuvi"
+                            YUVARAAJAN E
                         </motion.h1>
                     </motion.div>
 
@@ -66,7 +66,7 @@ const Intro = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
                     >
-                        MSc Internetworking student @ University of Alberta
+                        Telecommunication Technician @ TELUS – via ATS     <br /> Master of Internetworking @ University of Alberta
                     </motion.p>
 
                     {/* Description */}

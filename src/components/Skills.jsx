@@ -11,7 +11,7 @@ const Skills = () => {
             title: 'Networking & Certifications',
             icon: HiGlobeAlt,
             skills: [
-                'CCNP ENCOR & ENSARI – ongoing (foundation from CCNA)',
+                'CCNP ENCOR – Completed (foundation from CCNA)',
                 'VLAN design, trunking, inter-VLAN routing',
                 'Static routes, OSPF basics, ACLs and port security',
                 'IPv4/IPv6 addressing, subnetting and summarisation',
@@ -22,7 +22,7 @@ const Skills = () => {
             icon: HiCog,
             skills: [
                 'Cisco Packet Tracer for quick ideas and practice',
-                'Learning containerlab / GNS3 for advanced CCNP labs',
+                'Learning containerlab / GNS3 for advanced networking labs',
                 'Wireshark for packet inspection and protocol behaviour',
                 'Linux CLI (Kali, Ubuntu) for security testing',
             ],
